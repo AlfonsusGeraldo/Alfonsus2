@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfonsus Geraldo | Mechatronics Engineer</title>
+    
+    <!-- Favicon (Ikon Logo di Tab Browser) -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Google Fonts (Dapat diakses jika ada internet, styling tetap aman jika offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- MEMANGGIL BOOTSTRAP 4.6 DARI FILE LOKAL -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- MEMANGGIL CSS KUSTOM (4.css) -->
+    <link rel="stylesheet" href="4.css">
+</head>
+<body data-spy="scroll" data-target="#mainNavbar" data-offset="100">
+
+    <!-- Header / Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Kombinasi: Lingkaran Logo + Teks Nama Alfonsus Geraldo -->
+            <a class="brand-wrapper" href="#home">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo AG" class="logo-img">
+                </div>
+                <span class="brand-text">Alfonsus Geraldo</span>
+            </a>
+            
+            <!-- Tombol Hamburger (Bootstrap 4 Syntax: data-toggle & data-target) -->
+            <button class="navbar-toggler border-dark" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Layout 2 Kolom) -->
+    <section id="home" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Kolom Kiri: Teks & Deskripsi -->
+                <div class="col-lg-7 text-center text-lg-left mb-4 mb-lg-0">
+                    <span class="badge badge-pill badge-light border border-dark px-3 py-2 mb-4 font-weight-bold shadow-sm">
+                        <i class="fas fa-robot text-primary mr-2"></i>Mahasiswa Mekatronika
+                    </span>
+                    <h1 class="hero-title">Alfonsus Geraldo</h1>
+                    <p class="hero-subtitle mb-4">
+                        Menjembatani dunia mekanik dan digital. Berbasis di Surakarta, saya berfokus pada integrasi <strong>Kelistrikan, Pemrograman, dan Desain Permesinan</strong> untuk menciptakan sistem otomasi industri yang cerdas dan presisi.
+                    </p>
+                    <a href="#contact" class="btn btn-custom text-decoration-none">
+                        Mari Berkolaborasi <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Kolom Kanan: Showcase Logo AG Besar -->
+                <div class="col-lg-5 text-center">
+                    <div class="hero-logo-box">
+                        <img src="logo.png" alt="Logo Alfonsus Geraldo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Services Section -->
+    <section id="keahlian" class="py-5 text-center">
+        <div class="container py-5">
+            <div class="section-badge">Expertise & Skills</div>
+            
+            <div class="row mt-4 text-left justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <i class="fas fa-bolt skill-icon"></i>
+                        <h3 class="font-weight-bold h4">Sistem Kelistrikan</h3>
+                        <p class="text-muted small mb-4">Perancangan instalasi listrik industri, analisis sirkuit elektronik, dan implementasi sistem kontrol motor yang aman dan efisien.</p>
+                        <div class="skill-tags">
+                            <span>PLC (Programmable Logic Controller)</span>
+                            <span>PCB Design</span>
+                            <span>Sensor & Aktuator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3 class="font-weight-bold h4">Pemrograman</h3>
+                        <p class="text-muted small mb-4">Pengembangan algoritma dan logika program untuk mikrokontroler (Embedded Systems) dan antarmuka mesin (HMI).</p>
+                        <div class="skill-tags">
+                            <span>C / C++</span>
+                            <span>Python</span>
+                            <span>Arduino / Raspberry Pi</span>
+                            <span>IoT Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <i class="fas fa-cogs skill-icon"></i>
+                        <h3 class="font-weight-bold h4">Desain & Permesinan</h3>
+                        <p class="text-muted small mb-4">Mendesain komponen mekanis presisi (CAD/CAM) dan mengeksekusi manufaktur menggunakan mesin CNC maupun konvensional.</p>
+                        <div class="skill-tags">
+                            <span>SolidWorks</span>
+                            <span>AutoCAD</span>
+                            <span>CNC Milling/Lathe</span>
+                            <span>3D Printing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container py-5">
+            <div class="section-badge">About Me</div>
+            
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        Sebagai mahasiswa <strong>Mekatronika</strong>, saya diajarkan untuk tidak hanya melihat suatu sistem dari satu sudut pandang. Saya memadukan ilmu mekanika yang solid, perancangan sirkuit elektronik yang presisi, dan logika pemrograman yang efisien untuk membangun robotika dan sistem otomasi industri.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row text-left align-items-center mt-5">
+                <div class="col-md-6 mb-4">
+                    <h3 class="font-weight-bold mb-4">Visi & Pengalaman</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i> <strong>Proyek Otomasi:</strong> Terlibat dalam riset robotika kampus dan simulasi industri.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i> <strong>Problem Solver:</strong> Mampu melakukan troubleshooting pada integrasi hardware dan software.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i> <strong>Adaptif:</strong> Terus mempelajari tren teknologi terbaru seperti AI dalam sistem kontrol dan Industrial IoT (IIoT).
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4 text-center">
+                    <h3 class="font-weight-bold mb-3">System Performance</h3>
+                    <p class="text-muted small">Stabilitas integrasi sistem mekanik & digital</p>
+                    
+                    <div class="wave-container d-flex justify-content-center align-items-center">
+                        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                            <path fill="#d1e2fc" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,149.3C672,139,768,149,864,170.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                            <path fill="#d1e2fc" fill-opacity="1" d="M1440,160L1488,170.7C1536,181,1632,203,1728,197.3C1824,192,1920,160,2016,149.3C2112,139,2208,149,2304,170.7C2400,192,2496,224,2592,218.7C2688,213,2784,171,2832,149.3L2880,128L2880,320L2832,320C2784,320,2688,320,2592,320C2496,320,2400,320,2304,320C2208,320,2112,320,2016,320C1920,320,1824,320,1728,320C1632,320,1536,320,1488,320L1440,320Z" transform="translate(1440, 0)"></path>
+                        </svg>
+                        <div class="performance-stat">98.5% Efisiensi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container py-5">
+            <div class="section-badge">Contact Me</div>
+            
+            <div class="row mt-4 text-left justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="font-weight-bold mb-4">Mari Berdiskusi</h3>
+                    
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt text-danger"></i>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Lokasi</h6>
+                            <small class="text-muted">Surakarta, Jawa Tengah, Indonesia</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope text-primary"></i>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Email</h6>
+                            <small class="text-muted">alfonsus.geraldo@email.com</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fab fa-linkedin text-info"></i>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">LinkedIn</h6>
+                            <small class="text-muted">/in/alfonsus-geraldo</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="card border-dark shadow p-4" style="border-radius: 12px;">
+                        <form action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name" class="font-weight-bold">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Masukkan nama..." required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email" class="font-weight-bold">Alamat Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="message" class="font-weight-bold">Pesan / Proyek</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tuliskan pesan Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom btn-block py-3">
+                                <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center border-top border-dark">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <div class="d-flex align-items-center mb-2 mb-sm-0">
+                <div class="footer-logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <span class="font-weight-bold h5 mb-0">Alfonsus Geraldo</span>
+            </div>
+            <p class="mb-0 text-muted small">&copy; 2026 Alfonsus Geraldo. Mechatronics Portfolio.</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
